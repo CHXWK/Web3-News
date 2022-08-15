@@ -20,9 +20,7 @@ const streamURL = 'https://api.twitter.com/2/tweets/search/stream?tweet.fields=p
 
 const rules =  [{ value: 'Web3'}]
 
-app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../', 'frontend', 'public', 'index.html'))
-})
+
 
 //Get stream rules
 async function getRules(){
